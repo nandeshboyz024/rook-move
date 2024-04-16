@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333333;
+}
+
+p {
+    margin: 10px 0;
+    color: #555555;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+#bigCount {
+    display: flex;
+    justify-content: center;
+}
+
+#cont {
+    display: grid;
+    grid-template-columns: repeat(9, 50px); /* Adjust button size as needed */
+    grid-template-rows: repeat(9, 50px);
+    gap: 2px; /* Gap between buttons */
+}
+
+
+
+.odd-row-odd-btn{
+    width: 50px; /* Adjust button size as needed */
+    height: 50px;
+    font-size: 16px;
+    background-color: black;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+.even-row-even-btn{
+    width: 50px; /* Adjust button size as needed */
+    height: 50px;
+    font-size: 16px;
+    background-color: black;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+.odd-row-even-btn{
+    width: 50px; /* Adjust button size as needed */
+    height: 50px;
+    font-size: 16px;
+    background-color: gray;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.even-row-odd-btn{
+    width: 50px; /* Adjust button size as needed */
+    height: 50px;
+    font-size: 16px;
+    background-color: gray;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+#search{
+    background: black;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#search:hover{
+    background:aliceblue;
+    color: black;
+}

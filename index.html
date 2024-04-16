@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkmove</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="heading">Rook's Move</h1>
+    <div style="text-align: end;">
+        <p1 id="timer" style="margin-right: 100px;">Timer</p1>
+    </div>
+   
+    <div id="input" style="text-align: center; display: block;">
+        <p id="EnterName"> Enter Your Name:</p>
+        <input type="text" placeholder="Name" id="name" autocomplete="off">
+    </div>
+    <div id="search_cls"  style="text-align: center; margin-top: 20px; display: block;">
+        <button id="search"> Search for a player</button>
+    </div>
+    <div id="loading" style="text-align: center; margin-top: 10px; display: none;">
+        <img src="media/loading.gif" alt="loading" width="50px" height="50px" srcset="">
+    </div>
+    <p id ="you" style="text-align: center; display: none;"><img src="media/user2.png" alt="player2"></p>
+    <div style="position: relative;">       
+        <div id="bigCount" style="position: relative; display: none;">      
+        <div id="cont">
+            <p style="text-align: center; margin-top: 25px;"></p>
+            <p style="text-align: center; margin-top: 25px;">a</p>
+            <p style="text-align: center; margin-top: 25px;">b</p>
+            <p style="text-align: center; margin-top: 25px;">c</p>
+            <p style="text-align: center; margin-top: 25px;">d</p>
+            <p style="text-align: center; margin-top: 25px;">e</p>
+            <p style="text-align: center; margin-top: 25px;">f</p>
+            <p style="text-align: center; margin-top: 25px;">g</p>
+            <p style="text-align: center; margin-top: 25px;">h</p>
+            
+            <p style="text-align: center; margin-left: 25px;">1</p>
+            <button id = "btn8" class="btn odd-row-even-btn" style="display: flex; justify-content: center; align-items: center;"></button>
+            <button id = "btn7" class="btn odd-row-odd-btn" style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn6" class="btn odd-row-even-btn" style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn5" class="btn odd-row-odd-btn" style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn4" class="btn odd-row-even-btn" style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn3" class="btn odd-row-odd-btn" style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn2" class="btn odd-row-even-btn" style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn1" class="btn odd-row-odd-btn" style="display: flex; justify-content: center; align-items: center;"><img src="media/player.png" style="display:block;" alt="Rook" width="48px" height="48px"></button>
+            
+            <p style="text-align: center; margin-left: 25px;">2</p>
+            <button id = "btn16" class="btn even-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn15" class="btn even-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn14" class="btn even-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn13" class="btn even-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn12" class="btn even-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn11" class="btn even-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn10" class="btn even-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn9" class="btn even-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+
+            <p style="text-align: center; margin-left: 25px;">3</p>
+            <button id = "btn24" class="btn odd-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn23" class="btn odd-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn22" class="btn odd-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn21" class="btn odd-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn20" class="btn odd-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn19" class="btn odd-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn18" class="btn odd-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn17" class="btn odd-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+
+            <p style="text-align: center; margin-left: 25px;">4</p>
+            <button id = "btn32" class="btn even-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn31" class="btn even-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn30" class="btn even-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn29" class="btn even-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn28" class="btn even-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn27" class="btn even-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn26" class="btn even-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn25" class="btn even-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+
+            <p style="text-align: center; margin-left: 25px;">5</p>
+            <button id = "btn40" class="btn odd-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn39" class="btn odd-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn38" class="btn odd-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn37" class="btn odd-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn36" class="btn odd-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn35" class="btn odd-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn34" class="btn odd-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn33" class="btn odd-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+
+            <p style="text-align: center; margin-left: 25px;">6</p>
+            <button id = "btn48" class="btn even-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn47" class="btn even-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn46" class="btn even-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn45" class="btn even-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn44" class="btn even-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn43" class="btn even-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn42" class="btn even-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn41" class="btn even-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+
+            <p style="text-align: center; margin-left: 25px;">7</p>
+            <button id = "btn56" class="btn odd-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn55" class="btn odd-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn54" class="btn odd-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn53" class="btn odd-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn52" class="btn odd-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn51" class="btn odd-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn50" class="btn odd-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn49" class="btn odd-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+
+            <p style="text-align: center; margin-left: 25px;">8</p>
+            <button id = "btn64" class="btn even-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"><img src="media/goal.png" style="display:block;" alt="Rook" width="65px" height="65px"> </button>
+            <button id = "btn63" class="btn even-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn62" class="btn even-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn61" class="btn even-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn60" class="btn even-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn59" class="btn even-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn58" class="btn even-row-even-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+            <button id = "btn57" class="btn even-row-odd-btn"  style="display: flex; justify-content: center; align-items: center;"> </button>
+        </div>
+    </div>
+    <h1 id="victory" style="position: absolute; margin:40%; margin-top: -200px; color: wheat; font-weight: bold;"></h1>
+    </div>
+    <p  id = "i" style="text-align: center; display: none;" ></p>
+    <div style="text-align: end;">
+        <h1 id="turn"></h1>
+    </div>
+   
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</html>
