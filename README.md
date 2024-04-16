@@ -13,3 +13,7 @@ To play Rook's Move locally, follow these steps:
 cd rook-on-render
 npm i
 npm run build
+```
+
+open http://localhost:3000/ when 2 different players are connected to same url they will be able to play the game.
+
