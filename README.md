@@ -12,7 +12,7 @@ try demo here[https://rook-on-render.onrender.com/]
 To play Rook's Move locally, follow these steps:
 
 ```bash
-cd rook-on-render
+cd rook-move
 npm i
 npm run build
 ```
