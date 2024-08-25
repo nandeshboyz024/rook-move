@@ -3,7 +3,7 @@ const socket = io();
     let timerInterval;
     let timoutseconds=30;
     let pos="";
-    let my_id="";
+    let my_id=""; 
     let current_move="user1";
     let match_id=-1;
     let input = document.getElementById("input");
