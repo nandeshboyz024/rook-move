@@ -32,7 +32,7 @@ io.on("connection",(socket)=>{
                         id:"user2",
                     }
                     let match={
-                        p1:player1,
+                        p1:player1, 
                         p2:player2,
                         move:"user1",
                         pos:"btn1"
